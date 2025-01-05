@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: auto;
+    width: 69%;
+    font-family: Helvetica, sans-serif;
+}
+
+.head {
+    display: flex;
+    gap : 3%;
+    margin-bottom: 15px;
+
+}
+.pilar {
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    height: 20px;
+    margin-top: 20px;
+
+}
+.titulo {
+    font-size: calc(1.5em * 0.5vw);
+    padding-top: 13px;
+    font-weight: 1000;
+}
+
+.head2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid rgb(69, 72, 74) 1px;
+    gap: 0.7%; 
+}
+.head2 .cuadrito {
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    margin-top: 0.5%;
+    margin-left : 0.9%;
+    margin-right: 0.9%;
+}
+.head2 p {
+    font-weight: bold;
+}
+.head2 span{
+    height: 25px;
+    color : rgb(69, 72, 74);
+}
+.content1 {
+    display: flex;
+    border-right: solid rgb(69, 72, 74) 1px;
+    width: 61.6%;
+}
+img {
+    margin-top: 5%;
+
+}
+.datos {
+    
+    color: rgb(69, 72, 74);
+}
+.datos h2 {
+    font-size: calc(0.625em + 0.5vw);
+    margin-bottom: 6%;
+    margin-top: 20%;
+    color: black;
+}
+.datos p {
+    font-size: calc(0.5em + 0.5vw);
+}
+.content_info {
+   display: flex;
+}
+.content2 {
+    padding-left: 25px;
+    padding-top: 13px;
+    color: rgb(69, 72, 74);
+}
+.content2 h2{
+    font-size: calc(0.625em + 0.5vw);
+    margin-top: 6.8%;
+    width: 100%;
+    margin-bottom: 5%;
+    color: black;
+}
+.content2 span{
+    font-size: 15px;
+    
+}
+.content2 p {
+    font-size: calc(0.5em + 0.5vw);
+}
+.tabla {
+    padding-top : 9%;
+    width: 100%;
+    height: 270px;
+}
+tr {
+    display: flex;
+    gap: 0.3%;
+    height: 21px;
+    border-top :solid 5px white
+}
+.tabla tr td {
+    
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: calc(0.5em + 0.5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+.tabla tr .prioridad {
+    width: 98%;
+    justify-content: start;
+    padding-left: 1%;
+}
+.valores {
+    height: 46px;
+    gap: 0.3%;
+    background-color: rgb(238, 235, 235);
+}
+.tabla .valores td {
+    background-color: rgb(238, 235, 235);
+    color: black;
+    font-weight: normal;
+    color: rgb(69, 72, 74);
+    font-size: calc(0.5em + 0.5vw);
+}
+.tabla .valores .end {
+    justify-content: end;
+    padding-right: 0.2%;
+}
+
+
+.content-IVA {
+    display: flex;
+    margin-top : 44px;
+    width: 100%;
+    gap: 7%;
+}
+.content-IVA .left {
+    width: 46%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 117px;
+    padding-left: 1px;
+    padding-right: 0%;
+    padding-top: 1.4%;
+}
+
+.content-IVA .left tr {
+  border: none;
+}
+
+.content-IVA .left tr td:nth-child(1) {
+    font-size: calc(0.313em + 0.5vw);
+    font-weight: bold;
+    width: 99%;
+}
+.content-IVA .left tr td:nth-child(2) {
+    display: flex;
+    color: rgb(69, 72, 74);
+    width: 1%;
+    justify-content: end;
+    font-size: calc(0.313em + 0.5vw);
+}
+
+
+.content-IVA .right{
+    width: 49%;
+    border-top : 3px solid black;
+    padding-top: 3%;
+}
+.content-IVA .right .total-retencion, .content-IVA .right .total-iva {
+    display: flex;
+    font-size: calc(0.313em + 0.5vw);
+    gap:40%;
+    margin-bottom: 15px;
+}
+.content-IVA .right .total-iva p:nth-child(1), .content-IVA .right .total-retencion p:nth-child(1){
+    font-weight: bold;
+    width: 80%;
+    color: black;
+}
+.content-IVA .right .total-iva p, .total-retencion p, .total-factura p {
+    color: rgb(69, 72, 74);
+}
+.content-IVA .right .total-factura {
+    display: flex;
+    gap:40%;
+    font-size: calc(0.625em + 0.5vw);
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    padding-top: 20px;
+}
+
+.content-IVA .right .total-factura p:nth-child(1) {
+    font-weight: 1000;
+    width: 80%;
+    color: black;
+}
+
+
+.cobros-vencimientos {
+    border-top: solid black 3px;
+    margin-top: 130px;
+    padding-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+table {
+    width: 100%;
+    padding-top: 4%;
+}
+table .categoria, .valores-cobros {
+    border: none;
+}
+table .categoria td {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 7.5%;
+    height: 24px;
+    padding-left: 0.7%;
+    padding-top: 0.2%;
+    font-size: calc(0.313em + 0.5vw);
+}
+table .categoria td:nth-child(3), table .valores-cobros td:nth-child(3) {
+    width: 30%;
+}
+table .categoria td:nth-child(4), table .valores-cobros td:nth-child(4) {
+    width: 55%;
+}
+table .valores-cobros{
+    background-color: rgb(238, 235, 235);
+    height: 62px;
+}
+table .valores-cobros td{
+    background-color: rgb(238, 235, 235);
+    height: 50px;
+    width: 7.5%;
+    padding-left: 0.7%;
+    padding-top: 0.9%;
+    color: rgb(69, 72, 74);
+    font-size: calc(0.313em + 0.5vw);
+}
+
+
+.gracias {
+    margin-top: 60%;
+    border-top: solid 3px black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: rgb(69, 72, 74);
+    font-size: calc(0.313em + 0.5vw);
+}
+.procede {
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: rgb(69, 72, 74);
+    font-size: calc(0.313em + 0.5vw);
+}
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: bold;
+    font-size: calc(0.313em + 0.5vw);
+}
